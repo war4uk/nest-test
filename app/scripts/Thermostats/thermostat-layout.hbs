@@ -1,0 +1,10 @@
+<div class="content thermostat online hvac-{{hvac_mode}}">
+    {{#if target_temperature_c}}
+      <span class='cooling'>&#10052;</span>
+      <span class='heating'>&#128293;</span>
+      <span class='fan'>	&#9886;</span>
+      <div class="temperature">{{target_temperature_c}}</div>      
+    {{else}}
+        loading
+    {{/if}}
+</div>

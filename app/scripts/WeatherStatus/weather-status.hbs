@@ -1,0 +1,27 @@
+<div class="panel panel-default">
+  <div class="panel-body ml120">
+    <h3>City was detected as {{city}}</h3>
+    <div class="row display-table">
+      <div class="col-md-6 display-cell">
+     <div>Temperature: {{temp}} Celsius</div>
+    <div>Wind: {{windSpeed}} meters/sec</div>      
+      </div>
+      <div class="col-md-6 display-cell">
+        {{#if windDirection}}
+          <div class="compass">
+            <div class="direction">
+              <p>{{windDirection}}<span>{{windSpeed}} met/s</span></p>
+            </div>
+            <div class="arrow {{tolower windDirection}}"></div>
+          </div>
+        {{else}}
+          No info about wind 
+        {{/if}}
+      </div>      
+    </div>
+  </div>
+  <div class="panel-footer" >
+    <button id='applyWind' class="btn btn-default btn-block">Apply this weather to thermostats</button>
+  </div>
+</div>
+

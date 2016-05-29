@@ -1,0 +1,19 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": "airbnb",
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-use-before-define": [
+            "error",
+            "nofunc"
+        ]
+    },
+    "globals": {
+        "Firebase": false
+    }
+}
